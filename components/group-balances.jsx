@@ -71,9 +71,9 @@ export function GroupBalances({ balances }) {
           }`}
         >
           {me.totalBalance > 0
-            ? `+₹₹{me.totalBalance.toFixed(2)}`
+            ? `+₹{me.totalBalance.toFixed(2)}`
             : me.totalBalance < 0
-              ? `-₹₹{Math.abs(me.totalBalance).toFixed(2)}`
+              ? `-₹{Math.abs(me.totalBalance).toFixed(2)}`
               : "₹0.00"}
         </p>
         <p className="text-sm text-muted-foreground mt-1">
